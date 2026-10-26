@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Games Review Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+  <img src="images/logo.svg" alt="Games Review Page logo" class="logo">
+  <h1>Games Review Page</h1>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="suggestions.html">Suggestions</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="welcome-banner">
+      <h2>Welcome to a Game review page</h2>
+      <p>Honest reviews of the games worth playing. Want to know more about the site?</p>
+      <a href="about.html" class="button">About Us</a>
+    </section>
+
+    <section id="welcome">
+      <h2>Recent Reviews</h2>
+
+      <div class="review">
+        <div class="zoom-container">
+          <a href="catalogue.html#cyberpunk">
+            <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077" class="zoom-img" onmouseover="zoomIn(this)"
+              onmouseout="zoomOut(this)">
+          </a>
+        </div>
+
+        <div class="review-text">
+          <h3>Cyberpunk 2077</h3>
+
+          <div class="tags">
+            <span>Action RPG</span>
+            <span>Open World</span>
+            <span>Single Player</span>
+          </div>
+
+          <p>
+            Step into Night City, a sprawling dystopian metropolis dominated by corporations
+            and advanced technology, as V, a fully customizable character. The game blends
+            first-person shooting, role-playing and open-world exploration, letting you
+            choose your own playstyle, whether that's stealth, hacking or direct combat.
+          </p>
+
+          <p>
+            A branching narrative with choices that shape the story's outcome gives it
+            plenty of replay value. It had a bumpy launch, but it has since been polished
+            into a very fun game with a huge amount of content to explore.
+          </p>
+
+          <a href="catalogue.html#cyberpunk" class="read-more">Read the full review &rarr;</a>
+        </div>
+      </div>
+
+      <button onclick="location.href='suggestions.html'">Send Suggestions</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p>Email: st4094@hw.ac.uk</p>
+      <p>Phone: +971 54 364 3385</p>
+    </div>
+
+    <div class="footer-name">
+      <p>Sidak Talreja</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
