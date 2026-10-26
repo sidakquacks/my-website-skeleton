@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue | Games Review Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <img src="images/logo.svg" alt="Games Review Page logo" class="logo">
+  <h1>Games Review Page</h1>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="suggestions.html">Suggestions</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Catalogue</h2>
+    <p class="intro">Every game we've reviewed, all in one place.</p>
+
+    <!-- Review 1 -->
+    <div class="review" id="cyberpunk">
+      <div class="zoom-container">
+        <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077" class="zoom-img" onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)">
+      </div>
+
+      <div class="review-text">
+        <h3>Cyberpunk 2077</h3>
+
+        <div class="tags">
+          <span>Action RPG</span>
+          <span>Open World</span>
+          <span>Single Player</span>
+        </div>
+
+        <p>
+          Cyberpunk 2077 is a game that takes place in a dystopian future.
+          The setting of it is a sprawling metropolis called Night City, where players assume the role of a customizable
+          character known as V.
+          The game offers a vast open world filled with diverse districts, each with its own unique atmosphere and
+          culture.
+          Players can explore the city, engage in various activities, and interact with a wide range of characters,
+          all while navigating the challenges of a cyberpunk society dominated by corporations and advanced technology.
+        </p>
+
+        <div class="more-text" hidden>
+          <p>
+            The gameplay is a blend of first-person shooting, role-playing elements, and open-world exploration.
+            Players can choose different playstyles, such as stealth, hacking, or direct combat, and can customize their
+            character's abilities and appearance.
+            The game features a branching narrative with multiple choices that impact the story's outcome, allowing for
+            replayability and different experiences based on player decisions.
+          </p>
+
+          <p>
+            Overall... the game is very well polished after its bumpy launch and has redeemed itself as a game.
+            It is very fun and has a lot of content to explore. The setting, the environment and the characters are all
+            very well curated, and the game is very fun to get into.
+          </p>
+        </div>
+        <button class="read-toggle" aria-expanded="false" onclick="toggleReview(this)">Read more</button>
+      </div>
+    </div>
+
+    <!-- Review 2: copy this block for each new game -->
+    <div class="review" id="game-two">
+      <div class="zoom-container">
+        <img src="images/got.jpg" alt="Ghost of Tsushima" class="zoom-img" onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)">
+      </div>
+
+      <div class="review-text">
+        <h3>Ghost of Tsushima</h3>
+
+        <div class="tags">
+          <span>Action</span>
+          <span>Adventure</span>
+          <span>Single Player</span>
+        </div>
+
+        <p>
+          Ghost of Tsushima is an action-adventure game set in feudal Japan.
+          The story follows Jin Sakai, a samurai who must defend his homeland from an invading force.
+          The game features a beautiful open world with diverse environments and a compelling narrative.
+        </p>
+
+        <div class="more-text" hidden>
+          <p>Jin Sakai is a lone samurai who defends his homeland while straying from the path of the samurai, slowly
+            losing his honor and identity
+            slowly losing his samurai honor and identity. </p>
+          <p> The game also features a rich soundtrack and stunning visuals that enhance the playthrough and make it so
+            there's never a boring moment.</p>
+
+          <p>
+            The gameplay emphasizes stealth and combat, allowing players to approach situations in various ways.
+            The game also includes a robust character progression system and a variety of side quests to enhance the
+            player's experience. Overall, Ghost of Tsushima is a visually stunning and immersive game that offers a
+            unique perspective on the samurai era.
+          </p>
+        </div>
+        <button class="read-toggle" aria-expanded="false" onclick="toggleReview(this)">Read more</button>
+      </div>
+    </div>
+
+    <!-- Review 4: copy this block for each new game -->
+    <div class="review" id="game-three">
+      <div class="zoom-container">
+        <img src="images/tf2.jpg" alt="Titanfall 2" class="zoom-img" onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)">
+      </div>
+
+      <div class="review-text">
+        <h3>Titanfall 2</h3>
+
+        <div class="tags">
+          <span>Shooter</span>
+          <span>Multiplayer</span>
+          <span>Single Player</span>
+        </div>
+
+        <p>
+          Titanfall 2 is a first-person shooter game that features fast-paced gameplay and a unique blend of infantry
+          and mech combat.
+          The game is set in a futuristic universe where players control pilots who can call down powerful mechs known
+          as Titans to aid them in battle.
+          The game offers both a single-player campaign and multiplayer modes, providing a variety of experiences for
+          players.
+        </p>
+
+        <div class="more-text" hidden>
+          <p>The single-player campaign follows the story of a pilot named Jack Cooper and his Titan, BT-7274,
+            as they navigate through a series of missions and challenges. The campaign is praised for its engaging
+            story, well-designed levels, and innovative gameplay mechanics that allow players to seamlessly switch
+            between pilot and Titan combat.
+          </p>
+          <p> The game was well-received by critics and players for its innovative approach to movement and combat
+            while implementing a secondary storyline and playstyle of titans.</p>
+        </div>
+
+        <button class="read-toggle" aria-expanded="false" onclick="toggleReview(this)">Read more</button>
+      </div>
+    </div>
+
+    <div class="review" id="game-four">
+      <div class="zoom-container">
+        <img src="images/tw3.jpg" alt="The Witcher 3: Wild Hunt" class="zoom-img" onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)">
+      </div>
+
+      <div class="review-text">
+        <h3>The Witcher 3: Wild Hunt</h3>
+
+        <div class="tags">
+          <span>RPG</span>
+          <span>Single Player</span>
+          <span>Open World</span>
+        </div>
+
+        <p>Review coming soon...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p>Email: st4094@hw.ac.uk</p>
+      <p>Phone: +971 54 364 3385</p>
+    </div>
+
+    <div class="footer-name">
+      <p>Sidak Talreja</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

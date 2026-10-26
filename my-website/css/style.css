@@ -1,0 +1,286 @@
+/* style.css: ONE stylesheet linked to every page */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* ---------- Base ---------- */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #222222;
+  background-color: #f2f4f8;
+}
+
+/* Grouping selector: one rule for several elements */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+/* Grouping selector: shared look for header and footer */
+header, footer {
+  background-color: #1F3864;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+main h2 {
+  display: inline-block;
+  border-bottom: 3px solid #F2A900;
+  padding-bottom: 4px;
+}
+
+.intro {
+  margin-bottom: 30px;
+  color: #555555;
+}
+
+/* ---------- Footer: contact left, name right ---------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  text-align: left;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+.footer-name {
+  text-align: right;
+}
+
+/* ---------- Navigation bar built from a list ---------- */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+nav li {
+  float: left;
+}
+
+/* Descendant selector: links inside nav list items */
+nav li a {
+  display: block;
+  padding: 18px 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect, and the highlight for the current page */
+nav li a:hover,
+nav li a.active {
+  background-color: #F2A900;
+  color: #000000;
+}
+
+/* ---------- Forms ---------- */
+label, input, select, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#formError {
+  color: #C62828;
+}
+
+/* ---------- Buttons ---------- */
+button,
+.button {
+  display: inline-block;
+  background-color: #1F3864;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover,
+.button:hover {
+  background-color: #2f5597;
+}
+
+/* ---------- Cards (About page, welcome banner) ---------- */
+.card {
+  background: white;
+  padding: 24px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  line-height: 1.7;
+  color: #333333;
+}
+
+.welcome-banner {
+  background: white;
+  padding: 24px 30px 30px;
+  border-radius: 12px;
+  border-left: 5px solid #F2A900;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+}
+
+.welcome-banner h2 {
+  margin-top: 0;
+  border-bottom: none;
+}
+
+/* ---------- Review cards ---------- */
+.review {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.zoom-container {
+  width: 250px;
+  height: 375px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.review-text {
+  flex: 1;
+  max-width: 65ch;
+}
+
+.review-text h3 {
+  margin-top: 0;
+}
+
+/* Descendant selector: paragraphs inside a review */
+.review-text p {
+  line-height: 1.7;
+  color: #333333;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tags span {
+  background-color: #eef1f7;
+  color: #1F3864;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1F3864;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #F2A900;
+}
+
+.read-more:hover {
+  color: #F2A900;
+}
+
+.read-toggle {
+  background: none;
+  padding: 0;
+  margin-top: 6px;
+  color: #1F3864;
+  font-weight: bold;
+  border-bottom: 2px solid #F2A900;
+  border-radius: 0;
+}
+
+.read-toggle:hover {
+  background: none;
+  color: #F2A900;
+}
+
+/* ---------- Phones: stack everything ---------- */
+@media (max-width: 700px) {
+  .review {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-name {
+    text-align: center;
+  }
+}
+
+header h1 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  display: inline-block;   /* makes the gradient fit the text, not the whole header */
+  background: linear-gradient(90deg, #FFFFFF, #F2A900);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+header {
+  background: linear-gradient(135deg, #1F3864, #2f5597);
+}
+
+footer {
+  background: linear-gradient(135deg, #1F3864, #2f5597);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  height: 70px;
+}
+
+header h1 {
+  margin: 0;
+}
