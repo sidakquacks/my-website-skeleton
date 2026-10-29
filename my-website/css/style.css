@@ -11,12 +11,15 @@ body {
 }
 
 /* Grouping selector: one rule for several elements */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Georgia, serif;
 }
 
 /* Grouping selector: shared look for header and footer */
-header, footer {
+header,
+footer {
   background-color: #1F3864;
   color: #FFFFFF;
   padding: 20px;
@@ -87,7 +90,10 @@ nav li a.active {
 }
 
 /* ---------- Forms ---------- */
-label, input, select, textarea {
+label,
+input,
+select,
+textarea {
   display: block;
   margin-bottom: 10px;
 }
@@ -255,13 +261,15 @@ button:hover,
 
 header h1 {
   font-family: 'Orbitron', Arial, sans-serif;
-  display: inline-block;   /* makes the gradient fit the text, not the whole header */
+  display: inline-block;
+  /* makes the gradient fit the text, not the whole header */
   background: linear-gradient(90deg, #FFFFFF, #F2A900);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
 header {
   background: linear-gradient(135deg, #1F3864, #2f5597);
 }
