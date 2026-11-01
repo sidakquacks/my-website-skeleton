@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions | Games Review Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+  <img src="images/logo.svg" alt="Games Review Page logo" class="logo">
+  <h1>Games Review Page</h1>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="suggestions.html">Suggestions</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="contact">
+      <h2>Suggestions</h2>
+      <p>Tell me which games you'd like to see reviewed next.</p>
+
+      <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option value="">Choose one</option>
+          <option value="suggestion">Game suggestion</option>
+          <option value="feedback">Feedback on a review</option>
+          <option value="question">Question</option>
+        </select>
+
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="formError"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p>Email: st4094@hw.ac.uk</p>
+      <p>Phone: +971 54 364 3385</p>
+    </div>
+
+    <div class="footer-name">
+      <p>Sidak Talreja</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
